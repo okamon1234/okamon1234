@@ -1,16 +1,37 @@
-## Hi there 👋
+# okamon1234
 
-<!--
-**okamon1234/okamon1234** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+UnityとC#を使ってゲームを開発しています。ゲームクライアントエンジニアを目指して、ゲームのルールやUI、オンライン同期などを制作してきました。
 
-Here are some ideas to get you started:
+既存のゲームにどんな遊びを加えたら面白くなるかを考え、実際に遊びながら改善することを大切にしています。大学院では、脳波を使った研究にも取り組んでいます。
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[ポートフォリオ](https://okamon1234.github.io/portfolio/) · [開発中のゲーム「Elemix」](https://github.com/okamon1234/Elemix)
+
+## 制作しているゲーム
+
+### Elemix — 属性反応 × 協力型ローグライク
+
+原神の元素反応のような「攻撃を組み合わせる楽しさ」を、ローグライクのビルド作りに取り入れたいと考えて制作しました。ソロで育てた武器を持ち寄り、仲間と巨大ボスに挑みます。
+
+- 炎・水・雷などの組み合わせで起きる属性反応と、物理武器2本の合体進化
+- 壊す部位の順番や残りHPによって、姿と攻撃が変わるボス
+- Photon Fusion 2による協力プレイ。最大4人を想定し、2クライアントで接続・同期を確認
+
+武器を選ぶ楽しさと、ボスをどう攻略するかを考える楽しさの両方を作りたいと思っています。物理と属性のバランスは、プレイした感触に加えて、同じ強化条件での火力比較を使って調整しています。
+
+**Unity 6 / C# / URP 2D / Photon Fusion 2**
+
+[ゲームの画面・仕様を見る](https://github.com/okamon1234/Elemix#elemix) · [設計と実装の説明](https://github.com/okamon1234/Elemix/blob/main/docs/ARCHITECTURE.md)
+
+## 開発で取り組んできたこと
+
+| 分野 | 経験 |
+|---|---|
+| Unity / C# | プレイヤー操作、敵AI、カードのルール、ターン・フェーズ管理、UI |
+| オンライン同期 | Photon PUN2・Fusion 2を使った入退室、ゲーム進行、状態の同期 |
+| 設計・検証 | ゲームロジック・表示・データ管理の分割、ログによる同期問題の確認、バランス比較 |
+
+機能を追加するときは、ルールの判定と表示の処理を分け、変更する場所を追いやすくすることを意識しています。遊んで気になった点についても、どの条件で起きるのかを確認しながら直しています。
+
+## これから
+
+個人開発で取り組んできた実装や調整の経験を活かし、エンジニアやクリエイターと意見を交わしながら、より多くの人に楽しんでもらえるゲームを作りたいと考えています。
